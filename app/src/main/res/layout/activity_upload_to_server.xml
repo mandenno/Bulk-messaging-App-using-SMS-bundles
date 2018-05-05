@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/white"
+    tools:context=".UploadToServer">
+
+    <TextView
+        android:id="@+id/tvHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Click the attatchment icon below to select your recipients.csv file"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/ivAttachment"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/images"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tv_file_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivAttachment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="No file has been selected"
+        android:textColor="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/b_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#039be5"
+        android:gravity="center"
+        android:text="import recipients"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/manual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b_upload"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:text="How to use this section"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+</RelativeLayout>

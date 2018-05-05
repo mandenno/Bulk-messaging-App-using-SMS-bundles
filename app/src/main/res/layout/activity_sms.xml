@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context="com.example.okangi.sm_admin.SMS">
+<TextView
+    android:layout_width="match_parent"
+    android:id="@+id/hommy"
+    android:layout_marginBottom="10dp"
+    android:background="@color/colorPrimary"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:textSize="16dp"
+    android:text="Days"
+    android:paddingBottom="10dp"
+    android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/smsarea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/sendMessage"
+        android:layout_toStartOf="@+id/sendMessage"
+        android:ems="10"
+        android:hint="Type your message here..."
+        android:inputType="textMultiLine"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/sendMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/smsarea"
+        android:clickable="true"
+        android:tint="@android:color/black"
+        app:backgroundTint="?attr/colorPrimaryDark"
+        app:fabSize="mini"
+        app:rippleColor="@android:color/white"
+        app:srcCompat="@android:drawable/ic_menu_send" />
+    </RelativeLayout>
+</RelativeLayout>

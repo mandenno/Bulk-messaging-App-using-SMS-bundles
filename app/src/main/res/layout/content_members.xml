@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Members"
+    tools:showIn="@layout/activity_members">
+    <LinearLayout
+        android:id="@+id/linlaHeaderProgressf"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/pbHeaderProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ProgressBar>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_members"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/smsmembers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="22dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:clickable="true"
+        app:backgroundTint="@color/colorAccent"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/sms" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/smsmembers"
+        android:layout_alignEnd="@+id/smsmembers"
+        android:layout_alignRight="@+id/smsmembers"
+        android:layout_marginBottom="11dp"
+        android:clickable="true"
+        android:src="@drawable/settings"
+        android:tint="@android:color/white"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabSize="mini" />
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <WebView
+        android:id="@+id/webview01x"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/toolbarprintertx">
+    </WebView>
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:subtitleTextColor="@color/colorPrimaryDark"
+        android:layout_height="wrap_content"
+        android:titleTextColor="@android:color/white"
+
+        android:id="@+id/toolbarprintertx">
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3246984456778707/7436452143">
+        </com.google.android.gms.ads.AdView>
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginStart="92dp"
+        app:srcCompat="@android:drawable/stat_sys_download" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/savepage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:clickable="true"
+        android:tint="@android:color/white"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabSize="normal"
+        app:rippleColor="@color/colorPrimary"
+        app:srcCompat="@drawable/pdfdown" />
+
+
+</RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

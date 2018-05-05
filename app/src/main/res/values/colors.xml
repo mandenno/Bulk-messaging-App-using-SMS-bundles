@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#c4941c</color>
+    <color name="colorPrimaryDark">#ae8419</color>
+    <color name="colorAccent">#826313</color>
+    <color name="contact_name">#333333</color>
+    <color name="contact_number">#8c8c8c</color>
+
+    <color name="colorBackground">#f8b0b7e4</color>
+    <color name="colorP">#e8edf3</color>
+    <color name="colorPrimary2">#ab47bc</color>
+    <color name="colorPrimary3">#ffff</color>
+    <color name="colorPrimary4">#ffff</color>
+    <color name="colorT">#ce93d8</color>
+    <color name="colorSiderBar">#bbdefb</color>
+    <color name="bg_color">#e8edf3</color>
+    <color name="button_facebook_normal">#4267B2</color>
+    <color name="button_facebook_pressed">#436baa</color>
+    <color name="button_light_gray_normal">#FFA726</color>
+    <color name="button_light_gray_pressed">#FF9800</color>
+    <color name="button_green_normal">#7E57C2</color>
+    <color name="button_green_pressed">#7955ba</color>
+    <color name="white">#FF9800</color>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+  android:padding="10dp"
+
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="2dp"
+        android:background="@color/colorAccent"
+        android:layout_marginRight="2dp"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/infox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:text="Please choose a payment plan. Weekly plan (Ksh 500) valid for 7 days or Monthly (Ksh 1000 for 30 days)."
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+        <Spinner
+            android:id="@+id/spinner1x"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/infox"
+            android:layout_height="wrap_content"
+
+            android:backgroundTint="@android:color/white"
+            android:entries="@array/payment_arrays"
+            android:prompt="@string/payment_prompt" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btnSubmitx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="PROCEED TO PAYMENT"
+        android:textColor="@android:color/black" />
+
+
+
+</RelativeLayout>

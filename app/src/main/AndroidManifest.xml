@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nupola.okangi.nupola">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/semaicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/semaicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Landing"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Large"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchablelarge" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Members"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchablemembers" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Friends"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchablefriend" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".company"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchablecompany" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".simplemulticontactpicker.Pick"
+            android:label="@string/app_name"
+            >
+
+        </activity>
+        <activity
+            android:name=".simplemulticontactpicker.ContactsPickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+
+        </activity>
+        <activity
+            android:name=".account"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ForgotCode"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Manual"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Edit_Small"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UploadToServer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Control"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Register"
+            android:label="SignUp" />
+        <activity
+            android:name=".Import"
+            android:label="Import Recipients" />
+        <activity
+            android:name=".Inherit"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Update"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SugBox"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Daily Tips"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Final"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Notif"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Resent Post"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Loginx"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Login"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".grouplarge"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Create group"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".settings"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+
+        <activity
+            android:name=".Plan"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity
+            android:name=".PayStart"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity
+            android:name=".Auth"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity
+            android:name=".Authx"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity
+            android:name=".BulkSMS"
+            android:label="Send Message" />
+        <activity
+            android:name=".Payment_Pesapal"
+            android:label="Payment plan" />
+        <activity
+            android:name=".About"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="nupola" />
+
+
+        <activity
+            android:name=".RequestCode"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity
+            android:name=".RequestCodex"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+
+        <activity
+            android:name=".addRes_Small"
+            android:label="Recipients" />
+        <activity android:name=".Chat" />
+        <activity android:name=".MyActivity" />
+        <activity android:name=".Bulktype" />
+        <activity android:name=".MyAccount" />
+        <activity android:name=".MyActivity1" />
+        <activity android:name=".settings_small" />
+        <activity
+            android:name=".manage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Url" />
+        <activity
+            android:name=".WebViewClientDemoActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".group"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity android:name=".Payment"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity android:name=".Contacts" />
+        <activity android:name=".Request" />
+        <activity
+            android:name=".SMS"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".addRes"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Add Recipient" />
+        <activity android:name=".Edit"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.NoActionBar"
+        ></activity>
+        <activity android:name=".ForgotPass"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            ></activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "150808725892",
+    "firebase_url": "https://nupola-e0af6.firebaseio.com",
+    "project_id": "nupola-e0af6",
+    "storage_bucket": "nupola-e0af6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:150808725892:android:8440238313be40b0",
+        "android_client_info": {
+          "package_name": "com.nupola.okangi.nupola"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "150808725892-rs8t8un2udgadle5j1365kokuang2emg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAD8a-ykZxQyVAJJLwAdlISay1LTZEx4zE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

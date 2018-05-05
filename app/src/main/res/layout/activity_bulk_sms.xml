@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="NamespaceTypo">
+    <EditText android:id="@+id/smsvalx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Type a message here..."
+        android:ems="10"
+        android:layout_toLeftOf="@+id/fabysmsx"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:inputType="text"></EditText>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabysmsx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="6dp"
+        android:clickable="true"
+
+        android:src="@android:drawable/ic_menu_send"
+        app:backgroundTint="@color/colorPrimary" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cview"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fbcancel"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="121dp"
+                android:clickable="true"
+                android:tint="@android:color/holo_red_dark"
+                app:backgroundTint="@android:color/holo_orange_dark"
+                app:rippleColor="@android:color/holo_red_dark"
+                app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/fbcancel"
+                android:layout_marginTop="31dp"
+                android:background="@color/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/title"
+                android:background="@android:color/holo_orange_dark"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
